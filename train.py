@@ -212,6 +212,7 @@ print("----------")
 print("\n")
 
 checkpoint = {
+    "arch": args.arch,
     "input_size": input_units,
     "output_size": output_units,
     "hidden_layers": [hidden_units],
