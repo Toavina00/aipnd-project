@@ -141,6 +141,8 @@ print("----------")
 print(" Training ")
 print("----------")
 print("\n")
+print("device:", device)
+print("\n")
 
 for e in range(epoch):
     running_loss = 0
