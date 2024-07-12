@@ -3,6 +3,7 @@ import os
 import torch
 import numpy as np
 import matplotlib.pyplot as plt
+import warnings
 
 from datetime import datetime
 from collections import OrderedDict
@@ -10,6 +11,8 @@ from collections import OrderedDict
 from torch import nn, optim
 from torch.utils.data import DataLoader
 from torchvision import transforms, models, datasets
+
+warnings.simplefilter("ignore")
 
 # Argument parser
 
