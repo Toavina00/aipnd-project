@@ -102,7 +102,7 @@ def display_prediction(image_path, model, cat_to_name):
 parser = argparse.ArgumentParser()
 
 parser.add_argument("input")
-parser.add_argument("model")
+parser.add_argument("checkpoint")
 parser.add_argument("--top_k", default=5, type=int)
 parser.add_argument("--category_names")
 
@@ -113,7 +113,7 @@ args = parser.parse_args()
 device = torch.device("cuda" if torch.cuda.is_available() and args.gpu else "cpu")
 
 input_path = args.input
-model_path = args.model
+model_path = args.checkpoint
 top_k = args.top_k
 
 cat_to_name = None
